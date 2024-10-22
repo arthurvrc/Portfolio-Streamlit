@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* Style pour l'animation de clignotement */
+.flicker-text {
+    font-size: 2em;
+    color: #e74c3c;
+    animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Style pour le texte arc-en-ciel */
+.rainbow-text {
+    font-size: 2em;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #0aff00, #00d4ff, #c300ff);
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Style pour le texte avec ombre pulsante */
+.shadow-pulse {
+    font-size: 2em;
+    color: #2ecc71;
+    text-shadow: 0 0 5px #2ecc71, 0 0 10px #2ecc71, 0 0 15px #2ecc71;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 5px #2ecc71, 0 0 10px #2ecc71, 0 0 15px #2ecc71; }
+    50% { text-shadow: 0 0 10px #2ecc71, 0 0 20px #2ecc71, 0 0 30px #2ecc71; }
+    100% { text-shadow: 0 0 5px #2ecc71, 0 0 10px #2ecc71, 0 0 15px #2ecc71; }
+}
+
+/* Style pour la couleur de fond personnalisée */
+.background-color {
+    background-color: #f0f8ff; /* Couleur de fond Alice Blue */
+    padding: 20px;
+    border-radius: 10px;
+}
