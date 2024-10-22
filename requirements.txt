@@ -1,0 +1,13 @@
+streamlit
+pandas
+matplotlib
+pydeck
+plotly
+numpy
+seaborn
+squarify
+scikit-learn
+statsmodels
+wordcloud
+pycountry
+streamlit-option-menu
